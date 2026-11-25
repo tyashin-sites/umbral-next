@@ -25,6 +25,7 @@ export function Experience({ name, pid, poster }: { name: string; pid: string; p
         data-thridify-mode="ready"
         data-thridify-poster={poster}
         className="absolute inset-0 z-[1] h-full w-full"
+        role="region"
         aria-label={`${name} — configure and open in 3D`}
       />
     </div>
