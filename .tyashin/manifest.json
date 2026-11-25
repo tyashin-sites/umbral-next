@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "framework": "nextjs",
+  "projectId": "6ae9556c0d304c5ad2874e1d",
+  "projectSlug": "doors-website",
+  "generatedAt": "2026-11-25T00:00:00.000Z",
+  "pages": {
+    "/": { "file": "src/app/page.tsx", "isServerComponent": true },
+    "/collection": { "file": "src/app/collection/page.tsx", "isServerComponent": true },
+    "/collection/[family]": { "file": "src/app/collection/[family]/page.tsx", "isServerComponent": true },
+    "/systems/[slug]": { "file": "src/app/systems/[slug]/page.tsx", "isServerComponent": true },
+    "/architects": { "file": "src/app/architects/page.tsx", "isServerComponent": true },
+    "/about": { "file": "src/app/about/page.tsx", "isServerComponent": true },
+    "/contact": { "file": "src/app/contact/page.tsx", "isServerComponent": true },
+    "/privacy": { "file": "src/app/privacy/page.tsx", "isServerComponent": true },
+    "/terms": { "file": "src/app/terms/page.tsx", "isServerComponent": true },
+    "/sitemap-pages.xml": { "file": "src/app/sitemap-pages.xml/route.ts", "isServerComponent": true }
+  },
+  "tyashinOwnedRoutes": ["/sitemap.xml", "/robots.txt", "/brand-kit.css", "/tyashin-runtime.js", "/blog", "/blog/[slug]"]
+}

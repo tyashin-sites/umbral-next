@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="2560" viewBox="0 0 2560 1440" preserveAspectRatio="none">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9CFCC"/><stop offset="0.55" stop-color="#E6E1D6"/><stop offset="1" stop-color="#F1E6D6"/></linearGradient>
+<linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDD0"/><stop offset="1" stop-color="#CFC6B6"/></linearGradient>
+<radialGradient id="sun" cx="0.78" cy="0.694" r="0.55"><stop offset="0" stop-color="#F7E3C4" stop-opacity="0.75"/><stop offset="1" stop-color="#F7E3C4" stop-opacity="0"/></radialGradient>
+<filter id="b"><feGaussianBlur stdDeviation="6.4"/></filter>
+</defs>
+<rect width="2560" height="1440" fill="url(#sky)"/>
+<rect width="2560" height="1000" fill="url(#sun)"/>
+<g filter="url(#b)">
+<path d="M0 945.3 C 142.2 945.3, 142.2 926.8, 284.4 926.8 C 426.7 926.8, 426.7 937.3, 568.9 937.3 C 711.1 937.3, 711.1 923.2, 853.3 923.2 C 995.6 923.2, 995.6 921.8, 1137.8 921.8 C 1280.0 921.8, 1280.0 955.7, 1422.2 955.7 C 1564.4 955.7, 1564.4 958.9, 1706.7 958.9 C 1848.9 958.9, 1848.9 909.0, 1991.1 909.0 C 2133.3 909.0, 2133.3 944.0, 2275.6 944.0 C 2417.8 944.0, 2417.8 945.5, 2560.0 945.5  L 2560 1004 L 0 1004 Z" fill="#B9BDB5" opacity="0.55"/>
+<path d="M0 973.0 C 98.5 973.0, 98.5 950.7, 196.9 950.7 C 295.4 950.7, 295.4 976.0, 393.8 976.0 C 492.3 976.0, 492.3 958.5, 590.8 958.5 C 689.2 958.5, 689.2 977.3, 787.7 977.3 C 886.2 977.3, 886.2 972.4, 984.6 972.4 C 1083.1 972.4, 1083.1 949.6, 1181.5 949.6 C 1280.0 949.6, 1280.0 973.5, 1378.5 973.5 C 1476.9 973.5, 1476.9 960.4, 1575.4 960.4 C 1673.8 960.4, 1673.8 966.0, 1772.3 966.0 C 1870.8 966.0, 1870.8 966.1, 1969.2 966.1 C 2067.7 966.1, 2067.7 964.9, 2166.2 964.9 C 2264.6 964.9, 2264.6 974.0, 2363.1 974.0 C 2461.5 974.0, 2461.5 954.7, 2560.0 954.7  L 2560 1004 L 0 1004 Z" fill="#A4A99E" opacity="0.5"/>
+</g>
+<rect y="1000" width="2560" height="440" fill="url(#fl)"/>
+<rect y="1000" width="2560" height="5.8" fill="#8A6A47" opacity="0.10"/>
+<text x="150" y="1330" font-family="Newsreader, Georgia, 'Times New Roman', serif" font-weight="300" font-size="46" letter-spacing="14.7" fill="#16140F" opacity="0.13">UMBRAL</text>
+</svg>

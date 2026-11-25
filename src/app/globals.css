@@ -1,0 +1,179 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ─────────────────────────────────────────────────────────────────────────
+   UMBRAL — design tokens. docs/DESIGN-SPEC.md is canonical; deviations are bugs.
+   Cal (limestone) dominates, Tinta carries text and night, Bronce is the only
+   accent. No purple, no gradient text, no glass cards, no grey shadows.
+   ───────────────────────────────────────────────────────────────────────── */
+:root {
+  --u-cal: #ece7de;
+  --u-luz: #f7f4ee;
+  --u-ink: #16140f;
+  --u-umbra: #2a251e;
+  --u-bronce: #8a6a47;
+  --u-bronce-lit: #b6916a;
+  --u-vidrio: #c7d0ce;
+  --u-stone: #d9d2c5;
+  --u-muted: #5e574c;
+  --u-muted-dark: #b7ad9d;
+
+  --brand-primary: var(--u-ink);
+  --brand-primary-contrast: var(--u-luz);
+  --brand-accent: var(--u-bronce);
+  --brand-bg: var(--u-cal);
+  --brand-surface: var(--u-luz);
+  --brand-text: var(--u-ink);
+  --brand-text-muted: var(--u-muted);
+  --brand-border: rgb(22 20 15 / 0.14);
+  --brand-radius-sm: 2px;
+  --brand-radius-md: 2px;
+  --brand-radius-lg: 4px;
+  --brand-radius-full: 999px;
+  --brand-heading-font: var(--font-heading), 'Iowan Old Style', Georgia, serif;
+  --brand-body-font: var(--font-body), 'Helvetica Neue', Arial, sans-serif;
+
+  /* One curve for everything that moves: a slow settle, never a bounce. */
+  --ease-brand: cubic-bezier(0.22, 0.61, 0.21, 1);
+  --dur-micro: 160ms;
+  --dur-ui: 320ms;
+  --dur-reveal: 1100ms;
+
+  /* Warm, ink-tinted light. Ambient + key, never grey. */
+  --shadow-rest: 0 1px 0 rgb(22 20 15 / 0.04), 0 18px 40px -28px rgb(42 37 30 / 0.35);
+  --shadow-lift: 0 1px 0 rgb(22 20 15 / 0.05), 0 30px 60px -30px rgb(42 37 30 / 0.45);
+
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --section: clamp(5.5rem, 12vw, 10rem);
+  --max: 1440px;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+  body {
+    background: var(--u-cal);
+    color: var(--u-ink);
+    font-family: var(--brand-body-font);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--u-ink); color: var(--u-cal); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { font-family: var(--brand-heading-font); font-weight: 300; letter-spacing: -0.02em; line-height: 1.05; }
+  hr { border: 0; height: 1px; background: var(--brand-border); }
+}
+
+/* Unlayered so no utility can remove it. */
+:focus-visible { outline: 1.5px solid var(--u-bronce); outline-offset: 3px; }
+
+@layer components {
+  .wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+  .section { padding-block: var(--section); }
+
+  /* Type tiers — size and air, never weight. */
+  .t-display { font-family: var(--brand-heading-font); font-weight: 300; font-size: clamp(3rem, 8.4vw, 8.75rem); line-height: 0.98; letter-spacing: -0.035em; }
+  .t-h1 { font-family: var(--brand-heading-font); font-weight: 300; font-size: clamp(2.5rem, 5.6vw, 5.5rem); line-height: 1.02; letter-spacing: -0.03em; }
+  .t-h2 { font-family: var(--brand-heading-font); font-weight: 300; font-size: clamp(2rem, 3.6vw, 3.5rem); line-height: 1.06; letter-spacing: -0.025em; }
+  .t-h3 { font-family: var(--brand-heading-font); font-weight: 400; font-size: clamp(1.4rem, 2vw, 1.85rem); line-height: 1.15; letter-spacing: -0.015em; }
+  .t-lead { font-family: var(--brand-heading-font); font-weight: 300; font-size: clamp(1.25rem, 1.9vw, 1.7rem); line-height: 1.4; letter-spacing: -0.01em; }
+  .t-italic { font-style: italic; }
+  .t-body { font-size: 1.0625rem; line-height: 1.65; color: var(--u-muted); max-width: 34em; }
+  .t-num { font-family: var(--font-mono), ui-monospace, monospace; font-feature-settings: 'tnum' 1; letter-spacing: 0; }
+
+  /* Eyebrow: small caps, wide tracking, a bronze hairline dash. */
+  .eyebrow { display: inline-flex; align-items: center; gap: 0.85rem; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--u-muted); }
+  .eyebrow::before { content: ''; width: 2.25rem; height: 1px; background: linear-gradient(90deg, var(--u-bronce), transparent); }
+  .on-night .eyebrow { color: var(--u-muted-dark); }
+
+  .rule { height: 1px; background: var(--brand-border); }
+  .rule-bronze { height: 1px; background: linear-gradient(90deg, rgb(138 106 71 / 0.6), rgb(138 106 71 / 0.08)); }
+
+  /* Links that read as text until touched. */
+  .link-line { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size var(--dur-ui) var(--ease-brand); }
+  .link-line:hover, .link-line:focus-visible { background-size: 100% 1px; }
+
+  /* Buttons — rectangular, quiet, a slow sheen. One primary per view. */
+  .btn { position: relative; display: inline-flex; align-items: center; gap: 0.9rem; padding: 1.05rem 1.6rem; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; border-radius: var(--brand-radius-sm); transition: transform var(--dur-ui) var(--ease-brand), background-color var(--dur-ui) var(--ease-brand), color var(--dur-ui) var(--ease-brand), border-color var(--dur-ui) var(--ease-brand); overflow: hidden; isolation: isolate; }
+  .btn .arrow { width: 1.6rem; height: 1px; background: currentColor; position: relative; transition: width var(--dur-ui) var(--ease-brand); }
+  .btn .arrow::after { content: ''; position: absolute; right: 0; top: -3px; width: 7px; height: 7px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; transform: rotate(45deg); }
+  .btn:hover .arrow { width: 2.4rem; }
+  .btn-primary { background: var(--u-ink); color: var(--u-luz); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08); }
+  .btn-primary::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 35%, rgb(182 145 106 / 0.28) 50%, transparent 65%); transform: translateX(-120%); transition: transform 900ms var(--ease-brand); }
+  .btn-primary:hover::before { transform: translateX(120%); }
+  .btn-primary:hover { transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid rgb(22 20 15 / 0.28); color: var(--u-ink); }
+  .btn-ghost:hover { border-color: var(--u-ink); }
+  .on-night .btn-primary { background: var(--u-cal); color: var(--u-ink); }
+  .on-night .btn-ghost { border-color: rgb(236 231 222 / 0.3); color: var(--u-cal); }
+  .on-night .btn-ghost:hover { border-color: var(--u-cal); }
+
+  /* Night sections: ink, faint warm grain. */
+  .on-night { background: var(--u-ink); color: var(--u-cal); position: relative; isolation: isolate; }
+  .on-night .t-body { color: var(--u-muted-dark); }
+  .grain::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.07; mix-blend-mode: soft-light; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .85 0 0 0 0 .78 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+  /* Figures: images sit in warm light, crop never shifts. */
+  .figure { position: relative; overflow: hidden; background: var(--u-stone); }
+  .figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 1600ms var(--ease-brand); }
+  .figure-hover:hover img { transform: scale(1.025); }
+
+  /* Spec rows: mono numbers on hairlines. */
+  .spec-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; padding-block: 1rem; border-bottom: 1px solid var(--brand-border); align-items: baseline; }
+  .spec-row dt { font-size: 0.9rem; color: var(--u-muted); }
+  .spec-row dd { font-family: var(--font-mono), ui-monospace, monospace; font-size: 0.92rem; text-align: right; }
+
+  /* Form fields: a single bottom line, labels above. */
+  .field { display: grid; gap: 0.45rem; }
+  .field label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--u-muted); }
+  .field input, .field select, .field textarea { width: 100%; background: transparent; border: 0; border-bottom: 1px solid rgb(22 20 15 / 0.3); padding: 0.7rem 0; font: inherit; font-size: 1.05rem; color: var(--u-ink); border-radius: 0; transition: border-color var(--dur-ui) var(--ease-brand); }
+  .field textarea { resize: vertical; min-height: 7rem; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--u-bronce); }
+
+  /* Header: constant height (CLS law); condenses by colour + shadow only. */
+  .site-header { position: sticky; top: 0; z-index: 50; height: 72px; display: flex; align-items: center; background: rgb(236 231 222 / 0); transition: background-color var(--dur-ui) var(--ease-brand), box-shadow var(--dur-ui) var(--ease-brand); }
+  .site-header.is-scrolled { background: rgb(236 231 222 / 0.94); box-shadow: 0 1px 0 rgb(22 20 15 / 0.08); backdrop-filter: saturate(1.1) blur(10px); }
+  .site-header .wordmark { transition: transform var(--dur-ui) var(--ease-brand); transform-origin: left center; }
+  .site-header.is-scrolled .wordmark { transform: scale(0.9); }
+
+  .skip { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: var(--u-ink); color: var(--u-luz); padding: 0.75rem 1rem; }
+  .skip:focus { top: 1rem; }
+}
+
+/* ── Reveal: settle into focus as it enters. Visible without JS. ── */
+.js .reveal { opacity: 0; transform: translateY(22px); filter: blur(5px); transition: opacity var(--dur-reveal) var(--ease-brand), transform var(--dur-reveal) var(--ease-brand), filter var(--dur-reveal) var(--ease-brand); transition-delay: var(--d, 0ms); }
+.js .reveal.is-in { opacity: 1; transform: none; filter: none; }
+
+/* Hero entrance — CSS only, transform-only on the LCP text (never hidden). */
+@keyframes rise { from { transform: translateY(26px); } to { transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.hero-rise { animation: rise 1400ms var(--ease-brand) both; animation-delay: var(--d, 0ms); }
+.hero-fade { animation: fadeIn 1600ms var(--ease-brand) both; animation-delay: var(--d, 0ms); }
+
+/* ── Signature 1: the shadow clock ───────────────────────────────────────
+   A window's mullion shadow lies on a limestone wall. --sun (0..1) is set
+   from local time and advanced by scroll: the shadow skews, lengthens and
+   warms through the afternoon. Purely decorative (aria-hidden).          */
+.shadow-wall { position: absolute; inset: 0; overflow: hidden; background:
+  radial-gradient(120% 80% at calc(20% + var(--sun, 0.5) * 60%) -10%, rgb(255 236 205 / calc(0.55 - var(--sun, 0.5) * 0.25)), transparent 60%),
+  linear-gradient(180deg, #efe9df 0%, #e7e0d4 70%, #ddd5c7 100%); }
+.shadow-wall .stone { position: absolute; inset: 0; opacity: 0.5; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .04' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .5 0 0 0 0 .43 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E"); }
+.shadow-cast { position: absolute; left: 50%; top: 50%; width: 92vmax; height: 92vmax; transform-origin: 50% 50%;
+  transform: translate(-50%, -50%) translateX(calc((var(--sun, 0.5) - 0.5) * -34vw)) rotate(calc(-14deg + var(--sun, 0.5) * 22deg)) skewX(calc(-24deg + var(--sun, 0.5) * 38deg)) scaleY(calc(1 + var(--sun, 0.5) * 0.35));
+  filter: blur(calc(2px + var(--sun, 0.5) * 7px)); opacity: calc(0.16 + var(--sun, 0.5) * 0.2); transition: transform 1200ms var(--ease-brand), filter 1200ms var(--ease-brand), opacity 1200ms var(--ease-brand); will-change: transform; }
+.shadow-cast rect { fill: #2a251e; }
+.shadow-wall .floor-line { position: absolute; left: 0; right: 0; bottom: 18%; height: 1px; background: rgb(42 37 30 / 0.12); }
+
+/* ── Signature 2: the sightline ─────────────────────────────────────── */
+.sightline-range { -webkit-appearance: none; appearance: none; width: 100%; height: 28px; background: transparent; cursor: ew-resize; }
+.sightline-range::-webkit-slider-runnable-track { height: 1px; background: rgb(236 231 222 / 0.35); }
+.sightline-range::-moz-range-track { height: 1px; background: rgb(236 231 222 / 0.35); }
+.sightline-range::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; margin-top: -11px; border-radius: 50%; background: var(--u-cal); border: 6px solid var(--u-ink); box-shadow: 0 0 0 1px var(--u-cal); }
+.sightline-range::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--u-cal); border: 6px solid var(--u-ink); box-shadow: 0 0 0 1px var(--u-cal); }
+
+/* Reduced motion: everything that travels stops; light may stay. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; filter: none; }
+}

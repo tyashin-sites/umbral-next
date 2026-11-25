@@ -1,0 +1,31 @@
+{
+  "name": "umbral-next",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Umbral — demonstration house for doors, windows and glass walls. Tyashin-managed Next.js site on Cloudflare Workers via OpenNext, with Thridify 3D experiences.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "preview": "npx @opennextjs/cloudflare build && npx wrangler dev",
+    "deploy": "npx @opennextjs/cloudflare build && npx wrangler deploy"
+  },
+  "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.13",
+    "clsx": "^2.1.0",
+    "next": "^16.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.152.0"
+  }
+}
