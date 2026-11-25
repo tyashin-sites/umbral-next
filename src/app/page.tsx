@@ -60,7 +60,7 @@ export default function Home() {
             <Link href={`/systems/${lead.slug}`} className="figure figure-hover block aspect-[16/11] reveal">
               <Image src={lead.stills.hero} alt={`${lead.name} sliding glass wall, partly open, late-afternoon light`} fill sizes="(min-width: 768px) 58vw, 100vw" className="object-cover" />
             </Link>
-            <p className="mt-4 flex justify-between text-[0.75rem] uppercase tracking-[0.18em] text-muted"><span>{lead.name}</span><span className="t-num normal-case tracking-normal">19 mm interlock</span></p>
+            <p className="mt-4 flex justify-between text-[0.75rem] uppercase tracking-[0.18em] text-muted"><span>{lead.name}</span><span className="t-num normal-case tracking-normal">22 mm interlock</span></p>
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* ── Signature 2 ─────────────────────────────────────────── */}
-      <Sightline target={19} opening={6000} label="Horizonte 19" />
+      <Sightline target={22} opening={6000} label="Horizonte 22" />
 
       {/* ── Signature 3: open it ───────────────────────────────── */}
       <section className="section">

@@ -1,0 +1,95 @@
+{
+  "slug": "tamiz",
+  "name": "Umbral Tamiz",
+  "pid": "UMBRAL-TAMIZ",
+  "productId": "6b06c7f2a95bfaef13fd444f",
+  "previewId": "io6ufp",
+  "live": "https://admin.thridify.com/p/io6ufp",
+  "admin": "https://admin.thridify.com/products/6b06c7f2a95bfaef13fd444f",
+  "sourceFolder": "14-crittall",
+  "motion": "Side-hung door pair inside a gridded screen: lever down, the first leaf swings to 92°, the second follows to 90°, then they close (Doors_Open); the lever hotspot opens only the first leaf to ~72° (Leaf_Active_Open).",
+  "sizes": [
+    {
+      "label": "Pair and sidelights · 2420 × 2520 mm",
+      "width_mm": 2420,
+      "height_mm": 2520
+    },
+    {
+      "label": "Pair and sidelights · 3020 × 2690 mm",
+      "width_mm": 3020,
+      "height_mm": 2690
+    },
+    {
+      "label": "Pair and sidelights · 3620 × 2880 mm",
+      "width_mm": 3620,
+      "height_mm": 2880
+    }
+  ],
+  "finishes": [
+    "Acero Grafito",
+    "Negro Carbón",
+    "Bronce Umbra",
+    "Piedra",
+    "Anodizado Natural",
+    "Latón Cepillado"
+  ],
+  "glass": [
+    "Claro",
+    "Bronce",
+    "Satinado",
+    "Acanalado"
+  ],
+  "options": [
+    "Size (3 variants: door pair 1.4 / 1.7 / 2.0 m with sidelights and transom)",
+    "Steel: Acero Grafito, Negro Carbón, Bronce Umbra, Piedra, Anodizado Natural",
+    "Handle: Latón Cepillado, Bronce Umbra, Anodizado Natural, Negro Carbón",
+    "Glazing bars: grid, horizontal bands, no bars",
+    "Glass: Claro, Bronce tinted, Satinado acid-etched, Acanalado reeded",
+    "Lever: round rose, long plate, square rose"
+  ],
+  "hotspots": [
+    {
+      "title": "Open both doors",
+      "text": "The first leaf swings to 92°, the second follows to 90°. Then they close in the same order, reversed."
+    },
+    {
+      "title": "Lever",
+      "text": "On a round rose, a long plate or a square rose. Press it and the first leaf opens on its own."
+    },
+    {
+      "title": "Powder-coated steel",
+      "text": "Hot-rolled, galvanised, powder-coated to 30 % gloss. It reads matt in daylight."
+    },
+    {
+      "title": "Glass",
+      "text": "16.4 mm insulating glass behind 25 mm bars. Claro, Satinado, Acanalado or Bronce."
+    },
+    {
+      "title": "Low threshold",
+      "text": "15 mm high. The floor runs through from one room to the next."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 32,
+    "leaf_sightline_mm": 55,
+    "frame_depth_mm": 34,
+    "max_panel_w_mm": 1000,
+    "max_panel_h_mm": 2400,
+    "glazing": "16.4 mm double",
+    "glazing_bar_mm": 25,
+    "threshold_mm": 15,
+    "note": "max leaf from the 3.6 m size (door pair 2000 × 2400); horizontal coupling 85 mm"
+  },
+  "stills": {
+    "hero": "/images/tamiz/hero.webp",
+    "front": "/images/tamiz/front.webp",
+    "detail": "/images/tamiz/detail.webp",
+    "finish": "Acero Grafito steel, Latón Cepillado levers"
+  },
+  "gaps": [
+    "Sizes are estimated.",
+    "The source context is an exterior terrace; the model still carries a stone terrace strip on one side, which reads as the next room's floor.",
+    "Only three lever shapes; no single-door or arched layouts.",
+    "Bronce glass is the source solar-control pane re-tinted in the GLB, with a drawn swatch thumbnail."
+  ]
+}

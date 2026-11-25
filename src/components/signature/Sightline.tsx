@@ -6,7 +6,7 @@ import { useId, useState } from 'react';
  * conventional frame to the system's own sightline; the view through the
  * drawing widens and the numbers run. Pure SVG + a native range input.
  */
-export function Sightline({ target = 19, opening = 6000, label = 'Horizonte 19' }: { target?: number; opening?: number; label?: string }) {
+export function Sightline({ target = 22, opening = 6000, label = 'Horizonte 22' }: { target?: number; opening?: number; label?: string }) {
   const id = useId();
   const [t, setT] = useState(0.35);
   const conventional = 86; // a good conventional aluminium slider profile, per stile

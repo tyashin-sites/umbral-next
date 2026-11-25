@@ -1,0 +1,94 @@
+{
+  "slug": "eje",
+  "name": "Umbral Eje",
+  "pid": "UMBRAL-EJE",
+  "productId": "6b06c730c0ff39ae451172d2",
+  "previewId": "jd74s5",
+  "live": "https://admin.thridify.com/p/jd74s5",
+  "admin": "https://admin.thridify.com/products/6b06c730c0ff39ae451172d2",
+  "sourceFolder": "07-brombal",
+  "motion": "The leaf turns 90° on an off-centre floor pivot set a quarter of its width in, holds, and closes (clip Door_Pivot, 5.8 s).",
+  "sizes": [
+    {
+      "label": "1220 × 2740 mm",
+      "width_mm": 1220,
+      "height_mm": 2740
+    },
+    {
+      "label": "1520 × 3050 mm (default)",
+      "width_mm": 1520,
+      "height_mm": 3050
+    },
+    {
+      "label": "1830 × 3350 mm",
+      "width_mm": 1830,
+      "height_mm": 3350
+    }
+  ],
+  "finishes": [
+    "Bronce Umbra",
+    "Latón Cepillado",
+    "Acero Grafito",
+    "Negro Carbón",
+    "Anodizado Natural"
+  ],
+  "glass": [
+    "Claro",
+    "Satinado",
+    "Bronce"
+  ],
+  "options": [
+    "Size (3 variants, frame outer)",
+    "Glass: Claro low-iron, Satinado inner lite, Bronce outer lite",
+    "Divided lites: 3 × 6 grid, four horizontal lites, none",
+    "Handle: round pull (machined steel), lever on a narrow plate",
+    "Frame and leaf finish (5)",
+    "Handle finish (5, chosen apart from the frame)"
+  ],
+  "hotspots": [
+    {
+      "title": "Off-centre pivot",
+      "text": "Tap to open. The leaf turns on a floor pivot set 370 mm in from its edge, so 3 m of steel and glass moves under one hand."
+    },
+    {
+      "title": "Handle",
+      "text": "A round pull machined from solid steel, on both faces. The alternative is a lever on a narrow plate."
+    },
+    {
+      "title": "Five finishes",
+      "text": "Frame and leaf in Bronce Umbra, Latón Cepillado, Acero Grafito, Negro Carbón or Anodizado Natural. The handle takes its own finish."
+    },
+    {
+      "title": "Glazing",
+      "text": "Two 10 mm low-iron lites around a 20 mm cavity. Claro, Satinado or Bronce."
+    },
+    {
+      "title": "49 mm sightline",
+      "text": "12 mm frame, 8 mm gap, 12 mm leaf and a 17 mm bead: 49 mm of steel per side. The frame is 84 mm deep."
+    },
+    {
+      "title": "Divided lites",
+      "text": "Bars on both faces with a spacer between the panes. A 3 × 6 grid, four horizontal lites or none."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 49,
+    "frame_depth_mm": 84,
+    "max_panel_w_mm": 1790,
+    "max_panel_h_mm": 3310,
+    "glazing": "40 mm double (10 / 20 / 10 mm), low-iron"
+  },
+  "stills": {
+    "hero": "/images/eje/hero.webp",
+    "front": "/images/eje/front.webp",
+    "detail": "/images/eje/detail.webp",
+    "finish": "Bronce Umbra"
+  },
+  "gaps": [
+    "Sizes, pivot offset, leaf depth and glass build-up are estimates carried over from the source build (no published figures).",
+    "Hotspot positions are set for 1520 × 3050; on the other sizes the finish and handle markers sit a few cm off the frame.",
+    "Source polished stainless and Cor-Ten finishes dropped (no close Umbral finish); Piedra, Roble Ahumado and Nogal not offered on steel.",
+    "Material records are named 'Umbral – <Finish> · Eje' because material names must be unique per account; shopper swatches show the plain finish name.",
+    "Stills: plaster wall and limestone floor beyond the model's own wall stub were added in the render scene only. No video made."
+  ]
+}

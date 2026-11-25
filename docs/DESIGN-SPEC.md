@@ -7,7 +7,7 @@ ink shadow, one bronze accent — where every product can be opened in 3D.
 gradient text, glassmorphism cards, centered hero + three icon cards, emoji or Lucide-in-tinted-square
 icons, "Elevate/Seamless/Timeless" copy, fake testimonials, stat bands ("10k+ clients"), fade-up on
 everything, bouncy easing, identical rounded-2xl cards. The logo test: put a competitor's name on the
-hero — "the part of the house you pass through" + a shadow clock + 19 mm only works for Umbral.
+hero — "the part of the house you pass through" + a shadow clock + 22 mm only works for Umbral.
 
 ## Colour
 | Token | Hex | Use |
@@ -39,7 +39,7 @@ never height (CLS law). Reduced motion kills all travel.
 
 ## Signature moments
 1. Shadow clock (home hero) — mullion shadow placed by local time, advanced by scroll.
-2. Sightline (home + Horizonte) — true-to-scale elevation, drag frame from 86 mm stiles to 19 mm.
+2. Sightline (home + Horizonte) — true-to-scale elevation, drag frame from 86 mm stiles to 22 mm.
 3. Open it (every system) — Thridify 3D experience, poster-first, click to mount.
 
 ## Pages (one intent per URL)

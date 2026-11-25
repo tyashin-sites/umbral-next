@@ -1,0 +1,130 @@
+{
+  "slug": "patio",
+  "name": "Umbral Patio",
+  "pid": "UMBRAL-PATIO",
+  "productId": "6b06c7ed5de001008d1ace26",
+  "previewId": "39pr_w",
+  "live": "https://admin.thridify.com/p/39pr_w",
+  "admin": "https://admin.thridify.com/products/6b06c7ed5de001008d1ace26",
+  "sourceFolder": "08-marvin",
+  "motion": "The handle turns 180°, the moving panels lift 6 mm onto their rollers, glide and stack over the fixed panel, then return and settle; 10 s clip Panels_LiftSlide_<size>, and a handle-only lift clip.",
+  "sizes": [
+    {
+      "label": "3 panels · 3.66 × 2.44 m",
+      "width_mm": 3658,
+      "height_mm": 2438
+    },
+    {
+      "label": "4 panels · 4.88 × 2.44 m",
+      "width_mm": 4877,
+      "height_mm": 2438
+    },
+    {
+      "label": "3 panels · 4.57 × 3.05 m",
+      "width_mm": 4572,
+      "height_mm": 3048
+    }
+  ],
+  "defaultSize": "3 panels · 3.66 × 2.44 m",
+  "finishes": [
+    "Roble Ahumado",
+    "Nogal",
+    "Piedra",
+    "Negro Carbón",
+    "Bronce Umbra",
+    "Acero Grafito",
+    "Anodizado Natural",
+    "Latón Cepillado"
+  ],
+  "finishNodes": {
+    "Inside: timber": [
+      "Roble Ahumado",
+      "Nogal",
+      "Piedra",
+      "Negro Carbón"
+    ],
+    "Outside: metal": [
+      "Bronce Umbra",
+      "Acero Grafito",
+      "Negro Carbón",
+      "Piedra",
+      "Anodizado Natural"
+    ],
+    "Handle": [
+      "Bronce Umbra",
+      "Latón Cepillado",
+      "Acero Grafito",
+      "Negro Carbón"
+    ],
+    "Threshold track": [
+      "Bronce Umbra",
+      "Anodizado Natural",
+      "Acero Grafito",
+      "Negro Carbón"
+    ]
+  },
+  "glass": [
+    "Claro",
+    "Gris",
+    "Bronce",
+    "Satinado",
+    "Acanalado"
+  ],
+  "options": [
+    "Size (3 variants)",
+    "Glass: Claro / Gris / Bronce / Satinado / Acanalado",
+    "Divided lites: Clear view / Grid / Perimeter",
+    "Handle: Fixed handle with key / Flush lever",
+    "Inside: timber (4)",
+    "Outside: metal (5)",
+    "Handle finish (4)",
+    "Threshold track (4)"
+  ],
+  "hotspots": [
+    {
+      "title": "Turn the handle",
+      "text": "A 180° turn lifts the panel 6 mm onto its rollers. Turn it back and it settles onto the seals and locks."
+    },
+    {
+      "title": "Lift, slide, stack",
+      "text": "The moving panels lift, glide and stack over the fixed one. Each runs on its own track, 97.5 mm apart."
+    },
+    {
+      "title": "Timber inside",
+      "text": "The inside face is timber: Roble Ahumado or Nogal, or painted Piedra or Negro Carbón."
+    },
+    {
+      "title": "Aluminium outside",
+      "text": "The outside face is 22 mm of extruded aluminium that takes the weather. Its finish is chosen separately from the timber."
+    },
+    {
+      "title": "24 mm insulating glass",
+      "text": "Two 5 mm panes around a 14 mm cavity. Claro, Gris, Bronce, Satinado or Acanalado under Glass."
+    },
+    {
+      "title": "Near-level threshold",
+      "text": "The sill sits in a slot in the floor, so only 5 mm of track shows above it."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 149,
+    "frame_depth_mm": 271,
+    "max_panel_w_mm": 1533,
+    "max_panel_h_mm": 2994,
+    "glazing": "24 mm insulating (5 + 14 + 5 mm)"
+  },
+  "stills": {
+    "hero": "/images/patio/hero.webp",
+    "front": "/images/patio/front.webp",
+    "detail": "/images/patio/detail.webp",
+    "finish": "Bronce Umbra"
+  },
+  "description": "A lift-and-slide door, timber inside and aluminium outside. A half turn of the handle lifts each panel 6 mm onto its rollers; it glides, stacks and settles back onto its seals.",
+  "gaps": [
+    "sightline_mm = two 102 mm meeting stiles less their 55 mm overlap; frame_depth_mm is the 3-panel jamb (4-panel: 368 mm).",
+    "Interior timber is a retint of the source oak/mahogany textures, not a new grain scan.",
+    "Material names carry the product (account-unique names).",
+    "Stills are Cycles renders of the source .blend with stills-only floor/wall extensions; the GLB itself is unchanged apart from renamed internal node and image names."
+  ],
+  "qa": "Live QA 25 Nov: loads with Roble Ahumado inside and Bronce Umbra outside, 6 hotspots; \"Lift, slide, stack\" stacks both moving panels over the fixed one."
+}

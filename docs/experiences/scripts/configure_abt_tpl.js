@@ -60,7 +60,7 @@ window.UMB = {
   U(n) { const u = U[n]; if (!u) throw new Error('missing upload ' + n); return u },
   async tex(name, file, type, thumb) {
     const u = this.U(file), th = thumb ? this.U(thumb) : u;
-    const r = await T.api('POST', '/texture', { name, texture: u.publicUrl, type, filePath: u.filePath, thumbnail: th.publicUrl, mediaType: 'image' });
+    const r = await T.api('POST', '/texture', { name: name.slice(0, 50), texture: u.publicUrl, type, filePath: u.filePath, thumbnail: th.publicUrl, mediaType: 'image' });
     return r.textureId || r.id || r._id;
   },
   async finishes(k) {

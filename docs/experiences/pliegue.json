@@ -1,0 +1,96 @@
+{
+  "slug": "pliegue",
+  "name": "Umbral Pliegue",
+  "pid": "UMBRAL-PLIEGUE",
+  "productId": "6b06c732a95bfaef13fd4427",
+  "previewId": "ajpo7i",
+  "live": "https://admin.thridify.com/p/ajpo7i",
+  "admin": "https://admin.thridify.com/products/6b06c732a95bfaef13fd4427",
+  "sourceFolder": "01-lacantina",
+  "motion": "Top-hung panels fold in pairs on face hinges and stack against the jamb inside the opening, then return to closed (Panels_Fold, 6 s).",
+  "sizes": [
+    {
+      "label": "4 panels · 3.66 × 2.44 m · fold left (default)",
+      "width_mm": 3658,
+      "height_mm": 2438
+    },
+    {
+      "label": "6 panels · 5.49 × 2.44 m · fold left",
+      "width_mm": 5486,
+      "height_mm": 2438
+    },
+    {
+      "label": "4 panels · 3.66 × 2.44 m · split 2 + 2",
+      "width_mm": 3658,
+      "height_mm": 2438
+    }
+  ],
+  "finishes": [
+    "Bronce Umbra",
+    "Negro Carbón",
+    "Piedra",
+    "Anodizado Natural",
+    "Nogal (interior only)",
+    "Latón Cepillado (hardware only)"
+  ],
+  "glass": [
+    "Claro",
+    "Claro solar-control",
+    "Satinado"
+  ],
+  "options": [
+    "Configuration and size (3 variants)",
+    "Handle: bar pull, lever, concealed",
+    "Sill: raised weather sill, flush sill",
+    "Glass: Claro low-e, Claro solar-control low-e, Satinado",
+    "Exterior finish (4)",
+    "Interior finish (5, incl. Nogal)",
+    "Hardware finish (4)"
+  ],
+  "hotspots": [
+    {
+      "title": "Folds to one side",
+      "text": "Tap to open. Four top-hung panels fold in pairs and stack against the jamb, clearing 3.66 m."
+    },
+    {
+      "title": "Handle",
+      "text": "One lever opens and locks the lead panel. Bar pull, lever or concealed, in four finishes."
+    },
+    {
+      "title": "Double glazing",
+      "text": "Two 5 mm tempered lites on a warm-edge spacer in the frame colour. Claro, solar-control Claro or Satinado."
+    },
+    {
+      "title": "54 mm stiles",
+      "text": "Stiles and rails are 54 mm. More of the 2.44 m height is glass."
+    },
+    {
+      "title": "Weather or flush sill",
+      "text": "A raised, sloped sill for exposed openings, or a flush sill level with the floor inside."
+    },
+    {
+      "title": "Walnut inside",
+      "text": "Aluminium outside, walnut or a painted finish inside. The interior is chosen apart from the exterior."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 54,
+    "frame_depth_mm": 114,
+    "max_panel_w_mm": 896,
+    "max_panel_h_mm": 2337,
+    "glazing": "25 mm double (5 / 15 / 5 mm), low-e"
+  },
+  "stills": {
+    "hero": "/images/pliegue/hero.webp",
+    "front": "/images/pliegue/front.webp",
+    "detail": "/images/pliegue/detail.webp",
+    "finish": "Bronce Umbra (anodised bronze)"
+  },
+  "gaps": [
+    "Frame depth, panel depth, sill profiles and the three opening sizes are estimates from the source build; only the 54 mm stile is sourced. Height fixed at 2.44 m.",
+    "No Acero Grafito or Roble Ahumado: no matching source texture (Douglas fir dropped as too light for smoked oak). Latón Cepillado hardware reuses the Eje brass texture.",
+    "The model loads in Negro Carbón (the GLB's own colour) until an exterior swatch is picked.",
+    "Hotspot markers stay at the closed-pose positions while the panels are open; switching variant resets option choices.",
+    "Stills: wall and floor beyond the model's own wall stubs added in the render scene only. No video made."
+  ]
+}

@@ -47,6 +47,7 @@ def strip_brand_svg(svg):
             d += 1 if m.group() != "</g>" else -1
             if d == 0: p = s + m.end(); break
         svg = svg[:s] + svg[p:]
+    svg = re.sub(r"#(fd5e00|c61a1a|e8692d)", "#8A6A47", svg, flags=re.I)  # source accent rules -> Umbral bronze
     return svg
 def backdrops(k, c):
     for n, w in (("backdrop_desktop", 2560), ("backdrop_mobile", 1920)):
@@ -69,7 +70,10 @@ def icons(k, c):
         s = re.sub(r"#[0-9a-fA-F]{6}", lambda m: "#16140F" if m.group().lower() in dark else ("#8A6A47" if m.group().lower() in acc else m.group()), s)
         assert not BRAND.search(s), f
         open(f"{WK}/{k}/icons/umbral-{k}-{f}", "w").write(s)
-for k in sys.argv[1:] or P:
+ONLY_BD = "--backdrops" in sys.argv
+for k in [a for a in sys.argv[1:] if not a.startswith("--")] or P:
     os.makedirs(f"{WK}/{k}", exist_ok=True)
-    print(k, "brand names left in GLB:", clean_glb(k, P[k]))
-    backdrops(k, P[k]); icons(k, P[k])
+    if not ONLY_BD: print(k, "brand names left in GLB:", clean_glb(k, P[k])); icons(k, P[k])
+    backdrops(k, P[k])
+    for n, (w, h) in (("backdrop_desktop", (2560, 1440)), ("backdrop_mobile", (1080, 1920))):
+        subprocess.run(["sips", "-z", str(h), str(w), f"{WK}/{k}/umbral-{k}-{n}.jpg"], capture_output=True)

@@ -1,0 +1,101 @@
+{
+  "slug": "reja",
+  "name": "Umbral Reja",
+  "pid": "UMBRAL-REJA",
+  "productId": "6b06c741275bced0d8697cdd",
+  "previewId": "w5uipe",
+  "live": "https://admin.thridify.com/p/w5uipe",
+  "admin": "https://admin.thridify.com/products/6b06c741275bced0d8697cdd",
+  "sourceFolder": "10-portella",
+  "motion": "The pair swings inward: the active leaf opens 84°, then the second leaf; they close in reverse so the astragal laps (Doors_Swing, 7 s). Door_Active opens the active leaf alone (4.6 s).",
+  "sizes": [
+    {
+      "label": "2.44 m · two 915 mm leaves, sidelites and transom (default)",
+      "width_mm": 2726,
+      "height_mm": 3106
+    },
+    {
+      "label": "2.74 m · two 915 mm leaves, sidelites and transom",
+      "width_mm": 2726,
+      "height_mm": 3411
+    },
+    {
+      "label": "3.05 m · two 915 mm leaves, sidelites and transom",
+      "width_mm": 2726,
+      "height_mm": 3716
+    }
+  ],
+  "finishes": [
+    "Bronce Umbra",
+    "Acero Grafito",
+    "Negro Carbón",
+    "Piedra",
+    "Anodizado Natural",
+    "Latón Cepillado (hardware only)"
+  ],
+  "glass": [
+    "Claro",
+    "Acanalado",
+    "Satinado"
+  ],
+  "options": [
+    "Configuration (12 variants): sidelites and transom / sidelites only / transom only / doors only × divided grid / horizontal bars / open glass",
+    "Height: 2.44, 2.74 or 3.05 m leaves",
+    "Handle: lever on a narrow plate, round lever on a slim plate, turned knob",
+    "Steel finish (5)",
+    "Hardware finish (4): Bronce Umbra, Latón Cepillado, Anodizado Natural, Negro Carbón",
+    "Glass (3)"
+  ],
+  "hotspots": [
+    {
+      "title": "Swing the pair",
+      "text": "Tap to open. The active leaf swings in first and the second follows; they close in reverse, so the astragal laps cleanly."
+    },
+    {
+      "title": "Lever and mortise lock",
+      "text": "A solid lever on a narrow plate over a mortise lock with a 44 mm backset. Tap to open the active leaf alone."
+    },
+    {
+      "title": "32 mm glazing bars",
+      "text": "Steel bars 32 mm wide on both faces, with a spacer between the panes. Grid, horizontal bars or open glass."
+    },
+    {
+      "title": "Barrel hinges",
+      "text": "Adjustable steel barrel hinges on ball bearings, finished with the frame. Three per leaf at 2.44 m, four above."
+    },
+    {
+      "title": "Brass sill",
+      "text": "A brass threshold with a stop the leaves close against. It is set to the finished floor."
+    },
+    {
+      "title": "Fixed sidelites",
+      "text": "356 mm of fixed glass each side, glazed and barred like the doors. Remove them, or the transom, in the configuration."
+    },
+    {
+      "title": "22 mm insulated glass",
+      "text": "Two 4.8 mm tempered lites with a low-e coat, 22 mm overall. Claro, Acanalado or Satinado."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 44,
+    "frame_depth_mm": 64,
+    "max_panel_w_mm": 915,
+    "max_panel_h_mm": 3048,
+    "glazing": "22 mm double (2 × 4.8 mm tempered, low-e)"
+  },
+  "stills": {
+    "hero": "/images/reja/hero.webp",
+    "front": "/images/reja/front.webp",
+    "detail": "/images/reja/detail.webp",
+    "finish": "Bronce Umbra (steel and hardware)"
+  },
+  "gaps": [
+    "All profile dimensions are estimates from the source build (no public section drawings). Overall sizes are for sidelites + transom; other configurations are narrower or lower.",
+    "Glass types are finishes on the glass material (as in the source), not show/hide meshes; checked live: Satinado stays translucent but reads subtly.",
+    "The model loads in Negro Carbón (the GLB's own colour) until a steel swatch is picked; Bronce Umbra is the first swatch.",
+    "Source Gray, Chestnut Brown, Antique Bronze, Rustic Copper finishes and Obscure glass dropped (no close Umbral match).",
+    "Configuration/grid are variants, so switching them resets height, handle and finishes (platform behaviour). Hero camera does not reframe for 3.05 m.",
+    "Stills: wall and floor are render-scene context only (the GLB has none). No video made.",
+    "A retry race left one unused 'Claro' texture record in the account library (no material uses it)."
+  ]
+}

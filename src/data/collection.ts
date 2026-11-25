@@ -1,3 +1,5 @@
+import { EXPERIENCES } from './experiences';
+
 /**
  * The Umbral collection — the ONE data source for every system page, family
  * page, the sitemap and the knowledge graph. Illustrative specifications:
@@ -88,19 +90,22 @@ export const GLASS_NOTES: Record<string, string> = {
   Satinado: 'Acid-etched, light without view',
   Acanalado: 'Reeded, 10 mm flutes',
   Bronce: 'Bronze tint, softens the sun',
+  Gris: 'Grey tint, cuts glare',
+  'Claro solar-control': 'Clear, with a solar-control coating',
 };
 
-// Filled from docs/experiences/<slug>.json once each experience is published.
-export const SYSTEMS: System[] = [
+// Editorial copy here; configuration, specs and 3D ids come from the built
+// experiences (src/data/experiences.ts, generated from docs/experiences/*.json).
+const EDITORIAL: System[] = [
   {
     slug: 'horizonte',
-    name: 'Horizonte 19',
+    name: 'Horizonte 22',
     pid: 'UMBRAL-HORIZONTE',
     family: 'glass-walls',
-    line: 'Nineteen millimetres between you and the horizon.',
-    summary: 'A frameless sliding glass wall. The interlock between panes is 19 mm; the frame disappears into floor, ceiling and wall.',
+    line: 'Twenty-two millimetres between you and the horizon.',
+    summary: 'A frameless sliding glass wall. The interlock between panes is 22 mm; the frame disappears into floor, ceiling and wall.',
     paragraphs: [
-      'Horizonte is a sliding wall of glass with almost nothing around it. The head and sill are recessed into the structure, so the only line left in the view is the 19 mm interlock where two panes meet.',
+      'Horizonte is a sliding wall of glass with almost nothing around it. The head and sill are recessed into the structure, so the only line left in the view is the 22 mm interlock where two panes meet.',
       'Panes run on stainless rollers inside the floor. A pane of several square metres moves with one hand and stops without a sound.',
     ],
     motion: 'Panes slide past each other on concealed floor tracks.',
@@ -282,6 +287,11 @@ export const SYSTEMS: System[] = [
     stills: { hero: '/images/tamiz/hero.webp', front: '/images/tamiz/front.webp', detail: '/images/tamiz/detail.webp' },
   },
 ];
+
+export const SYSTEMS: System[] = EDITORIAL.map((s) => {
+  const e = EXPERIENCES[s.slug];
+  return e ? { ...s, previewId: e.previewId, sightlineMm: e.sightlineMm, finishes: e.finishes, glass: e.glass, sizes: e.sizes, notes: e.notes, specs: e.specs } : s;
+});
 
 export function getSystem(slug: string): System | undefined {
   return SYSTEMS.find((s) => s.slug === slug);

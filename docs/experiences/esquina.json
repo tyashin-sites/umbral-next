@@ -1,0 +1,122 @@
+{
+  "slug": "esquina",
+  "name": "Umbral Esquina",
+  "pid": "UMBRAL-ESQUINA",
+  "productId": "6b06c7aba95bfaef13fd4442",
+  "previewId": "l5he0-",
+  "live": "https://admin.thridify.com/p/l5he0-",
+  "admin": "https://admin.thridify.com/products/6b06c7aba95bfaef13fd4442",
+  "sourceFolder": "w2-12-fleetwood",
+  "motion": "Both legs of the corner telescope into their wall pockets (lead panel collects each next panel at the interlock), leg B 8 frames behind; 9 s clip Panels_Pocket_<size>, plus a short lead-panel slide on the flush-pull hotspot.",
+  "sizes": [
+    {
+      "label": "Corner · 3 + 3 panels · 3.66 + 3.66 × 3.05 m",
+      "width_mm": 7315,
+      "height_mm": 3048
+    },
+    {
+      "label": "Corner · 2 + 2 panels · 2.44 + 2.44 × 2.74 m",
+      "width_mm": 4877,
+      "height_mm": 2743
+    },
+    {
+      "label": "Straight · 4 panels · 4.88 × 3.05 m",
+      "width_mm": 4877,
+      "height_mm": 3048
+    }
+  ],
+  "defaultSize": "Corner · 3 + 3 panels · 3.66 + 3.66 × 3.05 m",
+  "finishes": [
+    "Acero Grafito",
+    "Bronce Umbra",
+    "Negro Carbón",
+    "Anodizado Natural",
+    "Piedra",
+    "Latón Cepillado"
+  ],
+  "finishNodes": {
+    "Frame": [
+      "Acero Grafito",
+      "Bronce Umbra",
+      "Negro Carbón",
+      "Anodizado Natural",
+      "Piedra",
+      "Latón Cepillado"
+    ],
+    "Flush pulls": [
+      "Anodizado Natural",
+      "Negro Carbón",
+      "Bronce Umbra",
+      "Latón Cepillado"
+    ]
+  },
+  "glass": [
+    "Claro",
+    "Satinado",
+    "Gris"
+  ],
+  "options": [
+    "Size / layout (3 variants: two corners, one straight pocket)",
+    "Glass: Claro / Satinado / Gris",
+    "Divided lites: Clear view / Steel-line grid",
+    "Frame finish (6)",
+    "Flush pull finish (4)"
+  ],
+  "hotspots": [
+    {
+      "title": "Open the corner",
+      "text": "Both legs slide into their wall pockets. No post, no jamb, only air where the corner was."
+    },
+    {
+      "title": "Flush pull",
+      "text": "A recessed pull sits in the lead stile, so the panel passes fully into the pocket. Pull it and it collects the next panel at the interlock."
+    },
+    {
+      "title": "No post at 90°",
+      "text": "Two panels meet at the corner with no post or jamb. When both legs pocket, the corner is gone."
+    },
+    {
+      "title": "25 mm insulating glass",
+      "text": "Two 6 mm panes and a dark spacer, glazed into thermally broken frames. Claro, Satinado or Gris under Glass."
+    },
+    {
+      "title": "The floor runs through",
+      "text": "The sill pan sits in the slab, so the floor is level inside and out. Only the stainless track inserts show."
+    },
+    {
+      "title": "Thermally broken frame",
+      "text": "Every profile carries a polyamide thermal break. Where two panels meet, the interlock reads 64 mm."
+    },
+    {
+      "title": "Open the wall",
+      "text": "Four panels stack into one wall pocket and leave the full 4.88 m clear."
+    },
+    {
+      "title": "Lock stile",
+      "text": "The lead panel closes into the lock jamb on an 83 mm stile, with multi-point locking."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 64,
+    "frame_depth_mm": 49,
+    "max_panel_w_mm": 1250,
+    "max_panel_h_mm": 2995,
+    "glazing": "25 mm insulating (6 + 13 + 6 mm), dark spacer"
+  },
+  "stills": {
+    "hero": "/images/esquina/hero.webp",
+    "front": "/images/esquina/front.webp",
+    "detail": "/images/esquina/detail.webp",
+    "finish": "Acero Grafito"
+  },
+  "description": "A corner with no post. Both legs slide into pockets in the walls, and the corner of the room opens to the terrace. Thermally broken aluminium, 25 mm insulating glass, a floor that runs straight through.",
+  "gaps": [
+    "frame_depth_mm is per track (49 mm); a 3-panel leg runs three tracks.",
+    "Glass set is Claro, Satinado and Gris (grey tint, outside the BRAND glass list); no reeded or bronze pane in this model.",
+    "Width is per leg for the corner sizes (width_mm = both legs added).",
+    "Material names carry the product (account-unique names).",
+    "Hotspots on moving panels stay at their rest positions while the clip plays (platform behaviour).",
+    "Stills are Cycles renders of the source .blend with stills-only floor/wall extensions; the GLB itself is unchanged apart from renamed internal node and image names."
+  ],
+  "qa": "Live QA 25 Nov: loads with Acero Grafito frame and 6 hotspots; \"Open the corner\" pockets both legs into the walls."
+}

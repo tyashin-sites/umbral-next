@@ -1,0 +1,117 @@
+{
+  "slug": "alba",
+  "name": "Umbral Alba",
+  "pid": "UMBRAL-ALBA",
+  "productId": "6b06c7baa95bfaef13fd444a",
+  "previewId": "a5550g",
+  "live": "https://admin.thridify.com/p/a5550g",
+  "admin": "https://admin.thridify.com/products/6b06c7baa95bfaef13fd444a",
+  "sourceFolder": "w2-10-leawod",
+  "motion": "Tilt-and-turn: the handle turns up and the leaf tips in 7° from the top (Sash_Tilt), or turns level and the leaf swings in 85° on concealed hinges (Sash_Turn); two-leaf versions move both leaves, mirrored.",
+  "sizes": [
+    {
+      "label": "One leaf · 1100 × 1400 mm",
+      "width_mm": 1100,
+      "height_mm": 1400
+    },
+    {
+      "label": "Two leaves · 1100 × 1400 mm",
+      "width_mm": 1100,
+      "height_mm": 1400
+    },
+    {
+      "label": "One leaf · 1300 × 1600 mm",
+      "width_mm": 1300,
+      "height_mm": 1600
+    },
+    {
+      "label": "Two leaves · 1300 × 1600 mm",
+      "width_mm": 1300,
+      "height_mm": 1600
+    },
+    {
+      "label": "One leaf · 1500 × 1800 mm",
+      "width_mm": 1500,
+      "height_mm": 1800
+    },
+    {
+      "label": "Two leaves · 1500 × 1800 mm",
+      "width_mm": 1500,
+      "height_mm": 1800
+    }
+  ],
+  "finishes": [
+    "Roble Ahumado",
+    "Nogal",
+    "Piedra",
+    "Negro Carbón",
+    "Acero Grafito",
+    "Bronce Umbra",
+    "Anodizado Natural",
+    "Latón Cepillado"
+  ],
+  "glass": [
+    "Claro",
+    "Bronce",
+    "Satinado"
+  ],
+  "options": [
+    "Size and leaves (6 variants: one or two leaves × 3 sizes)",
+    "Interior · wood: Roble Ahumado, Nogal, Piedra, Negro Carbón",
+    "Exterior · aluminium: Acero Grafito, Bronce Umbra, Negro Carbón, Piedra, Anodizado Natural",
+    "Handle: Bronce Umbra, Latón Cepillado, Anodizado Natural, Acero Grafito, Negro Carbón",
+    "Glass: Claro double 5/27/5 argon, Claro triple, Bronce tinted, Satinado acid-etched"
+  ],
+  "hotspots": [
+    {
+      "title": "Tilt for air",
+      "text": "Turn the handle up and the leaf tips in 7° from the top. Air moves, rain stays out."
+    },
+    {
+      "title": "Turn to open",
+      "text": "Handle level, the leaf swings in 85° on its hidden hinges. The whole opening is clear."
+    },
+    {
+      "title": "Welded corners",
+      "text": "Frame and leaf are each one welded ring, 7 mm radius at the corners. No mitre line to open up."
+    },
+    {
+      "title": "Hinges inside the frame",
+      "text": "The pivots sit in the rebate. Closed, nothing shows."
+    },
+    {
+      "title": "Solid wood inside",
+      "text": "28.7 mm of timber on the frame, 16 mm on the leaf, facing the room. Smoked oak, walnut or painted."
+    },
+    {
+      "title": "Insulating glass",
+      "text": "5 mm, 27 mm argon, 5 mm, held in a 45 mm rabbet. Triple glazing on request."
+    },
+    {
+      "title": "Aluminium outside",
+      "text": "A thermally broken aluminium shell takes the weather. The whole section is 121 mm deep."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 81,
+    "frame_depth_mm": 121,
+    "max_panel_w_mm": 1474,
+    "max_panel_h_mm": 1774,
+    "glazing": "37 mm double 5/27 argon/5 (triple 4/12/4/12/4 option)",
+    "corner_radius_mm": 7,
+    "note": "sightline = interior frame 13 + leaf 62 (+ gaps) read from the source section; leaf = 1500 × 1800 frame less 13 mm wood frame and 2 mm gap each side"
+  },
+  "stills": {
+    "hero": "/images/alba/hero.webp",
+    "front": "/images/alba/front.webp",
+    "detail": "/images/alba/detail.webp",
+    "finish": "Acero Grafito outside, Roble Ahumado inside, Bronce Umbra handle"
+  },
+  "gaps": [
+    "Sizes are estimated (made to measure; no published sizes in the source).",
+    "Hotspot pins show on the default variant only (platform behaviour inherited from the source build); the animations still play in every variant via the default view.",
+    "Handle finishes share one metallic roughness map, so Negro Carbón and Piedra handles read slightly metallic.",
+    "No inward fly screen modelled (it would block the tilt/turn).",
+    "Hero still shows the leaf only slightly open: the 85° turn hides the frame shadow on the floor."
+  ]
+}

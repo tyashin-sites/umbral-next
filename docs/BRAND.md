@@ -32,13 +32,13 @@ Architects and their private clients building or restoring a serious house. They
 section drawings. They have seen every brochure. They decide in silence and call later.
 
 ## Voice
-- **Exact.** Numbers over adjectives. "19 mm" beats "ultra-slim".
+- **Exact.** Numbers over adjectives. "22 mm" beats "ultra-slim".
 - **Quiet.** Short sentences. No exclamation marks. Never sells; describes.
 - **Physical.** Talks about light, weight, sound, temperature, hands, floors, afternoons.
 - **Dry warmth.** Allowed one turn of phrase per section, never two.
 - Sentence case everywhere. Headlines ≤ 9 words. Body paragraphs ≤ 3 sentences.
 
-**Do:** "The pane is 6 metres wide. The frame you see is 19 mm."
+**Do:** "The pane is 6 metres wide. The frame you see is 22 mm."
 **Don't:** "Elevate your living space with seamless, timeless craftsmanship."
 
 **Banned words:** elevate, unlock, seamless, timeless, empower, transform, reimagine,
@@ -50,7 +50,7 @@ Products carry one Spanish noun that describes what they *do*, never what they *
 
 | Name | Meaning | System |
 |---|---|---|
-| Horizonte 19 | horizon | Frameless sliding glass wall, 19 mm interlock |
+| Horizonte 22 | horizon | Frameless sliding glass wall, 22 mm interlock |
 | Esquina | corner | Post-free corner, both legs pocket into the walls |
 | Pliegue | fold | Folding glass wall |
 | Patio | courtyard | Lift-and-slide door |

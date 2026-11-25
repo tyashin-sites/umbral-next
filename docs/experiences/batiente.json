@@ -1,0 +1,89 @@
+{
+  "slug": "batiente",
+  "name": "Umbral Batiente",
+  "pid": "UMBRAL-BATIENTE",
+  "productId": "6b06c7f0c0ff39ae451172dc",
+  "previewId": "lxy1qi",
+  "live": "https://admin.thridify.com/p/lxy1qi",
+  "admin": "https://admin.thridify.com/products/6b06c7f0c0ff39ae451172dc",
+  "sourceFolder": "05-hopes",
+  "motion": "Out-swing casement pair: both cam levers lift 90°, the left leaf swings out to 80°, then the right (which carries the astragal); they close in reverse order (Sash_Open).",
+  "sizes": [
+    {
+      "label": "Pair and transom · 1219 × 1829 mm",
+      "width_mm": 1219,
+      "height_mm": 1829
+    },
+    {
+      "label": "Pair and transom · 1524 × 2032 mm",
+      "width_mm": 1524,
+      "height_mm": 2032
+    },
+    {
+      "label": "Pair and transom · 1829 × 2438 mm",
+      "width_mm": 1829,
+      "height_mm": 2438
+    }
+  ],
+  "finishes": [
+    "Bronce Umbra",
+    "Acero Grafito",
+    "Negro Carbón",
+    "Piedra",
+    "Latón Cepillado"
+  ],
+  "glass": [
+    "Claro",
+    "Satinado",
+    "Acanalado"
+  ],
+  "options": [
+    "Size (3 variants, pair and transom)",
+    "Steel: Bronce Umbra, Acero Grafito, Negro Carbón, Piedra, Latón Cepillado",
+    "Handle: Bronce Umbra, Latón Cepillado, Acero Grafito, Negro Carbón",
+    "Glazing bars: through bars 35 mm 2 × 3 / 2 × 4 / 3 × 5, applied bars 22 mm 2 × 3, no bars",
+    "Glass: Claro low-E, Satinado acid-etched, Acanalado reeded",
+    "Glazing bead: square or sloped"
+  ],
+  "hotspots": [
+    {
+      "title": "Open the casements",
+      "text": "Lift the cam handles and both leaves swing out to 80°. The right leaf carries the astragal, so it closes last and seals first."
+    },
+    {
+      "title": "Hot-rolled steel, welded",
+      "text": "Solid steel, welded at every corner. 36.5 mm where it is fixed, 66.7 mm where it opens."
+    },
+    {
+      "title": "Insulating glass",
+      "text": "Two 6 mm lites with a 12.5 mm cavity. The spacer is finished in the frame colour."
+    },
+    {
+      "title": "Glazing beads",
+      "text": "Square or sloped. The choice sets the shadow line the bead draws on the glass."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 36.5,
+    "operable_sightline_mm": 66.7,
+    "frame_depth_mm": 44.5,
+    "max_panel_w_mm": 890,
+    "max_panel_h_mm": 1790,
+    "glazing": "24.5 mm double 6/12.5/6",
+    "glazing_bar_mm": 34.9,
+    "note": "max leaf from the 1829 × 2438 size: (1829 − 2 × 25 frame) / 2 wide, casement zone to the transom bar centre high (estimate from generator parameters)"
+  },
+  "stills": {
+    "hero": "/images/batiente/hero.webp",
+    "front": "/images/batiente/front.webp",
+    "detail": "/images/batiente/detail.webp",
+    "finish": "Bronce Umbra steel, Latón Cepillado handles"
+  },
+  "gaps": [
+    "Sizes are estimated (built to order).",
+    "Hotspot pins show on the default size only; the shopper's dimension readout uses the whole GLB box (all three sizes).",
+    "No sidelites; one panel configuration (pair + transom).",
+    "Through bars are modelled as caps on both faces over continuous glass (not individually glazed panes).",
+    "Latón Cepillado on the steel uses the bronze grain maps (suggested option)."
+  ]
+}

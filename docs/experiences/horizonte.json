@@ -1,0 +1,114 @@
+{
+  "slug": "horizonte",
+  "name": "Umbral Horizonte 19",
+  "pid": "UMBRAL-HORIZONTE",
+  "productId": "6b06c7a9a95bfaef13fd443d",
+  "previewId": "zew59o",
+  "live": "https://admin.thridify.com/p/zew59o",
+  "admin": "https://admin.thridify.com/products/6b06c7a9a95bfaef13fd443d",
+  "sourceFolder": "09-skyframe",
+  "motion": "The moving pane glides sideways on the outer track and parks behind the fixed pane (centre-opening sizes: both middle panes part outwards); 8 s clip Panels_Slide, from the first hotspot.",
+  "sizes": [
+    {
+      "label": "2 panels · 4.4 × 2.8 m",
+      "width_mm": 4400,
+      "height_mm": 2800
+    },
+    {
+      "label": "2 panels · 6.0 × 2.8 m",
+      "width_mm": 6000,
+      "height_mm": 2800
+    },
+    {
+      "label": "4 panels, centre opening · 6.0 × 2.8 m",
+      "width_mm": 6000,
+      "height_mm": 2800
+    },
+    {
+      "label": "4 panels, centre opening · 8.0 × 2.8 m",
+      "width_mm": 8000,
+      "height_mm": 2800
+    }
+  ],
+  "defaultSize": "2 panels · 6.0 × 2.8 m",
+  "finishes": [
+    "Bronce Umbra",
+    "Acero Grafito",
+    "Negro Carbón",
+    "Anodizado Natural",
+    "Piedra"
+  ],
+  "finishNodes": {
+    "Frame": [
+      "Bronce Umbra",
+      "Acero Grafito",
+      "Negro Carbón",
+      "Anodizado Natural",
+      "Piedra"
+    ],
+    "Pull handle": [
+      "Bronce Umbra",
+      "Acero Grafito",
+      "Negro Carbón",
+      "Anodizado Natural",
+      "Piedra"
+    ]
+  },
+  "glass": [
+    "Claro",
+    "Satinado",
+    "Gris"
+  ],
+  "options": [
+    "Size (4 variants)",
+    "Floor track: Flush (floor runs over it) / Visible track",
+    "Glass: Claro / Satinado / Gris",
+    "Frame finish (5)",
+    "Pull handle finish (5)"
+  ],
+  "hotspots": [
+    {
+      "title": "Slides on concealed rollers",
+      "text": "Tap to open. The moving pane runs on the outer track and parks behind the fixed pane."
+    },
+    {
+      "title": "One slim interlock",
+      "text": "Where two panes meet, a 22 mm interlock is the only vertical line in the opening."
+    },
+    {
+      "title": "Frame in the ceiling",
+      "text": "The head profile sits in a 125 mm pocket above the ceiling line. The glass runs to the soffit."
+    },
+    {
+      "title": "Flush floor track",
+      "text": "The rails sit 125 mm into the floor. Leave the track visible, or let the floor run over it and keep only two 20 mm slots."
+    },
+    {
+      "title": "12 mm single glazing",
+      "text": "One 12 mm pane, for rooms without thermal demands: pool houses, loggias, courtyards. Panes here reach 3.0 × 2.8 m."
+    }
+  ],
+  "geometry": {
+    "sightline_mm": 22,
+    "frame_depth_mm": 136,
+    "max_panel_w_mm": 3000,
+    "max_panel_h_mm": 2800,
+    "glazing": "12 mm single (monolithic)"
+  },
+  "stills": {
+    "hero": "/images/horizonte/hero.webp",
+    "front": "/images/horizonte/front.webp",
+    "detail": "/images/horizonte/detail.webp",
+    "finish": "Bronce Umbra"
+  },
+  "description": "A frameless sliding glass wall. The frame sits in the floor, the ceiling and the walls, so the only vertical line is the interlock where two panes meet. Up to four panes, 8 metres wide.",
+  "gaps": [
+    "The name says 19 but the model's interlock stile is 22 mm wide (the source generator's estimate); the sightline figure here is the model's real 22 mm.",
+    "Glass: no reeded or bronze-tint pane exists in this model, so the set is Claro (low-iron), Satinado and Gris (grey tint, outside the BRAND glass list); the source's plain clear-float pane is kept hidden.",
+    "Material names carry the product ('Umbral – Bronce Umbra · Horizonte') because material names must be unique per account and each product's maps differ.",
+    "Hotspots are placed for the 6.0 m sizes; on 4.4 m and 8.0 m they sit on the same glass/stile positions.",
+    "Internal GLB node names were renamed (root Horizonte); no logo meshes existed in the source model.",
+    "Stills are Cycles renders of the source .blend with stills-only floor/wall extensions; the GLB itself is unchanged apart from renamed internal node and image names."
+  ],
+  "qa": "Live QA 25 Nov: loads with the mark-free backdrop, 5 hotspots, Bronce Umbra frame and Flush track by default; the slide hotspot plays Panels_Slide; Frame finish swap to Anodizado Natural applies; tabs Variants / Frame / Pull handle / Floor track / Glass."
+}

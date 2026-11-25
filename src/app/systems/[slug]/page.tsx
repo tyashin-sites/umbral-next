@@ -43,9 +43,9 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
             <h1 className="t-display mt-6 hero-rise">{s.name}</h1>
             <p className="t-lead mt-6 italic hero-rise" style={{ ['--d' as string]: '80ms' }}>{s.line}</p>
           </div>
-          <div className="md:col-span-7">
-            <div className="figure aspect-[16/11]">
-              <Image src={s.stills.hero} alt={`${s.name}, partly open, in late-afternoon light`} fill priority sizes="(min-width: 768px) 58vw, 100vw" className="object-cover" />
+          <div className="md:col-span-5 md:col-start-8">
+            <div className="figure aspect-[4/5]">
+              <Image src={s.stills.front} alt={`${s.name}, elevation`} fill priority sizes="(min-width: 768px) 36vw, 100vw" className="object-cover" />
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
         </div>
       </section>
 
-      {s.slug === 'horizonte' ? <Sightline target={s.sightlineMm || 19} opening={6000} label={s.name} /> : null}
+      {s.slug === 'horizonte' ? <Sightline target={s.sightlineMm || 22} opening={6000} label={s.name} /> : null}
 
       {/* Finishes, glass, sizes */}
       <section className="section">
@@ -119,8 +119,15 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
             <p className="eyebrow">Specification</p>
             <dl className="mt-8 [&_.spec-row]:border-[rgb(236_231_222/0.12)] [&_dt]:text-[#a99f8f]">
               {(s.specs ?? []).map((sp) => (<div key={sp.label} className="spec-row"><dt>{sp.label}</dt><dd>{sp.value}</dd></div>))}
-              {(s.sizes ?? []).length ? (<div className="spec-row"><dt>Configurations in 3D</dt><dd className="max-w-[18rem]">{s.sizes.join(' · ')}</dd></div>) : null}
             </dl>
+            {(s.sizes ?? []).length ? (
+              <>
+                <p className="mt-12 text-[0.72rem] uppercase tracking-[0.2em] text-[#a99f8f]">Configurations in 3D</p>
+                <ul className="mt-4 space-y-2">
+                  {s.sizes.map((z) => (<li key={z} className="t-num text-[0.85rem] text-cal">{z}</li>))}
+                </ul>
+              </>
+            ) : null}
             <p className="mt-6 text-[0.75rem] text-[#8f8676]">Illustrative specification for a demonstration house. Geometry from the parametric model.</p>
           </div>
           <div className="md:col-span-6 md:col-start-7">
@@ -141,16 +148,11 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
       <section className="section">
         <div className="wrap grid gap-16 md:grid-cols-12">
           <div className="md:col-span-4">
-            <div className="figure aspect-[4/5] reveal">
-              <Image src={s.stills.front} alt={`${s.name}, elevation`} fill sizes="(min-width: 768px) 30vw, 100vw" className="object-cover" />
-            </div>
-          </div>
-          <div className="md:col-span-7 md:col-start-6">
             <p className="eyebrow">Quotation</p>
-            <h2 className="t-h2 mt-5 max-w-[20ch]">Every {s.name} is made to its opening.</h2>
+            <h2 className="t-h2 mt-5 max-w-[14ch]">Every {s.name} is made to its opening.</h2>
             <p className="t-body mt-5">Send us the size and what you chose in 3D. We reply with questions, a drawing and a price for that opening.</p>
-            <div className="mt-12"><QuoteForm system={s.slug} /></div>
           </div>
+          <div className="md:col-span-7 md:col-start-6"><QuoteForm system={s.slug} /></div>
         </div>
       </section>
 

@@ -1,0 +1,95 @@
+{
+ "eje": {
+  "hidden": [
+   "Brombal_Pivot/Size_S",
+   "Brombal_Pivot/Size_L",
+   "Brombal_Pivot/Glass_LowIron/Lites_LowIron_S",
+   "Brombal_Pivot/Glass_LowIron/Lites_LowIron_L",
+   "Brombal_Pivot/Glass_Satin",
+   "Brombal_Pivot/Glass_Bronze",
+   "Brombal_Pivot/Grille_SDL4",
+   "Brombal_Pivot/Grille_Grid36/Muntins_Grid36_S",
+   "Brombal_Pivot/Grille_Grid36/Muntins_Grid36_L",
+   "Brombal_Pivot/Grille_None",
+   "Brombal_Pivot/Handle_Round/RoundPull_S",
+   "Brombal_Pivot/Handle_Round/RoundPull_L",
+   "Brombal_Pivot/Handle_Venetio"
+  ],
+  "clip": "Door_Pivot",
+  "heroFrame": 34,
+  "detailMesh": [
+   "RoundPull_M"
+  ],
+  "detailOff": [
+   -0.42,
+   0.6,
+   0.12
+  ],
+  "heroAz": 0.6,
+  "sunx": -0.3
+ },
+ "reja": {
+  "hidden": [
+   "Portella_FrenchDoor/Size_H108",
+   "Portella_FrenchDoor/Size_H120",
+   "Portella_FrenchDoor/HW_Hoppe",
+   "Portella_FrenchDoor/HW_Knob",
+   "Portella_FrenchDoor/Size_H96/Leaf_L_H96/LeafL_Grid_Cont_H96",
+   "Portella_FrenchDoor/Size_H96/Leaf_R_H96/LeafR_Grid_Cont_H96",
+   "Portella_FrenchDoor/Size_H96/Sidelites_H96/SideL_H96/SideL_H96_Grid_Cont",
+   "Portella_FrenchDoor/Size_H96/Sidelites_H96/SideR_H96/SideR_H96_Grid_Cont",
+   "Portella_FrenchDoor/Size_H96/TransomNarrow_H96",
+   "Portella_FrenchDoor/Size_H96/TransomWide_H96/TransomWC_H96/TransomWC_H96_Grid_Cont"
+  ],
+  "clip": "Doors_Swing",
+  "heroFrame": 34,
+  "side": 1,
+  "finish": {
+   "Frame_Steel": "10-portella/textures/finishes/steel_Dark_Bronze.jpg",
+   "Hardware_Metal": "10-portella/textures/finishes/hw_Silicon_Bronze_Dark.jpg"
+  },
+  "detailMesh": [
+   "HW_RockyMountain_R"
+  ],
+  "detailOff": [
+   0.35,
+   0.45,
+   0.1
+  ],
+  "heroAz": 0.6
+ },
+ "pliegue": {
+  "hidden": [
+   "LaCantinaV2/Config_6L",
+   "LaCantinaV2/Config_2L2R",
+   "LaCantinaV2/Sill_Flush",
+   "LaCantinaV2/Handle_Toulon",
+   "LaCantinaV2/Handle_Concealed",
+   "LaCantinaV2/Sill_Weather/SillW_6L",
+   "LaCantinaV2/Sill_Weather/SillW_2L2R",
+   "LaCantinaV2/Handle_Savannah/HS_6L",
+   "LaCantinaV2/Handle_Savannah/HS_2L2R",
+   "LaCantinaV2/Glass_LowE366",
+   "LaCantinaV2/Glass_SatinEtch",
+   "LaCantinaV2/Glass_Clear/GlassC_6L",
+   "LaCantinaV2/Glass_Clear/GlassC_2L2R"
+  ],
+  "clip": "Panels_Fold",
+  "heroFrame": 22,
+  "finish": {
+   "Frame_Exterior": "01-lacantina/textures/finishes/an_Bronze_Anodized.jpg",
+   "Frame_Interior": "01-lacantina/textures/finishes/an_Bronze_Anodized.jpg",
+   "Hardware_Metal": "01-lacantina/textures/finishes/hw_Bronze.jpg"
+  },
+  "detailMesh": [
+   "HS_4L"
+  ],
+  "detailOff": [
+   0.3,
+   0.45,
+   0.1
+  ],
+  "heroAz": 0.7,
+  "heroDist": 1.9
+ }
+}
