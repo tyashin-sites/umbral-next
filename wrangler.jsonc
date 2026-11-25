@@ -13,11 +13,10 @@
   "durable_objects": { "bindings": [{ "name": "NEXT_CACHE_DO_QUEUE", "class_name": "DOQueueHandler" }] },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DOQueueHandler"] }],
   "vars": {
-    "TYASHIN_API_URL": "https://website-api.tyashin.com",
     "PROJECT_ID": "6ae9556c0d304c5ad2874e1d",
     "PROJECT_SLUG": "doors-website",
     // Demo house: stays noindex on the slug host. Flip at a real cutover only.
     "ROBOTS_NOINDEX": "true"
   }
-  // Secret (deploy.yml secret sync): TYASHIN_API_KEY — the project's public X-API-Key.
+  // Secrets (deploy.yml secret sync from adopt envSecrets): TYASHIN_API_URL, TYASHIN_API_KEY.
 }
