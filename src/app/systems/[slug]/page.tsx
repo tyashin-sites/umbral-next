@@ -76,7 +76,7 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
             </div>
             {url ? <a href={url} target="_blank" rel="noopener" className="link-line text-[0.78rem] font-medium uppercase tracking-[0.16em]">Full screen, or in your room (AR)</a> : null}
           </div>
-          <Experience name={s.name} poster={s.stills.hero} url={url} />
+          <Experience name={s.name} pid={s.pid} poster={s.stills.hero} />
         </div>
       </section>
 

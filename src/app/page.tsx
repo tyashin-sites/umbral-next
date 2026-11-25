@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { pageMetadata } from '@/lib/seo';
 import { siteConfig } from '@/config/site';
-import { SYSTEMS, FAMILIES, getSystem, shopperUrl, systemsIn } from '@/data/collection';
+import { SYSTEMS, FAMILIES, getSystem, systemsIn } from '@/data/collection';
 import { ShadowClock } from '@/components/signature/ShadowClock';
 import { Sightline } from '@/components/signature/Sightline';
 import { Experience } from '@/components/Experience';
@@ -99,7 +99,7 @@ export default function Home() {
             <Link href={`/systems/${feature.slug}`} className="link-line mt-8 inline-block text-[0.8rem] font-medium uppercase tracking-[0.16em] reveal">{feature.name}, in full</Link>
           </div>
           <div className="lg:col-span-8 reveal">
-            <Experience name={feature.name} poster={feature.stills.hero} url={feature.previewId ? shopperUrl(feature.previewId) : ''} />
+            <Experience name={feature.name} pid={feature.pid} poster={feature.stills.hero} />
           </div>
         </div>
       </section>
