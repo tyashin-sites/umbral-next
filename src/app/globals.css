@@ -5,8 +5,10 @@
    UMBRAL — design tokens. docs/DESIGN-SPEC.md is canonical; deviations are bugs.
    Cal (limestone) dominates, Tinta carries text and night, Bronce is the only
    accent. No purple, no gradient text, no glass cards, no grey shadows.
+   Declared on html:root (not :root): the edge inlines a default brand-kit
+   :root block at the end of <head>, and plain :root would lose to it.
    ───────────────────────────────────────────────────────────────────────── */
-:root {
+html:root {
   --u-cal: #ece7de;
   --u-luz: #f7f4ee;
   --u-ink: #16140f;
