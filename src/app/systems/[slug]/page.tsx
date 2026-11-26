@@ -34,19 +34,21 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
     <>
       <KnowledgeGraph path={`/systems/${s.slug}`} title={s.name} description={s.summary} system={s} crumbs={[{ name: 'Collection', path: '/collection' }, { name: family.name, path: `/collection/${family.slug}` }, { name: s.name, path: `/systems/${s.slug}` }]} />
 
-      {/* Hero: name left, still bleeding right */}
-      <section className="pt-12 md:pt-16">
+      {/* Hero: the live 3D model IS the hero — the first thing on the page. */}
+      <section className="pt-10 md:pt-14">
         <div className="wrap"><Breadcrumbs items={[{ name: 'Collection', href: '/collection' }, { name: family.name, href: `/collection/${family.slug}` }, { name: s.name }]} /></div>
-        <div className="wrap mt-10 grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-5">
+        <div className="wrap mt-8 grid gap-6 md:grid-cols-12 md:items-end">
+          <div className="md:col-span-7">
             <p className="eyebrow hero-fade">{family.name}</p>
-            <h1 className="t-display mt-6 hero-rise">{s.name}</h1>
-            <p className="t-lead mt-6 italic hero-rise" style={{ ['--d' as string]: '80ms' }}>{s.line}</p>
+            <h1 className="t-h1 mt-4 hero-rise">{s.name}</h1>
           </div>
-          <div className="md:col-span-5 md:col-start-8">
-            <div className="figure aspect-[4/5]">
-              <Image src={s.stills.front} alt={`${s.name}, elevation`} fill priority sizes="(min-width: 768px) 36vw, 100vw" className="object-cover" />
-            </div>
+          <p className="t-lead italic md:col-span-5 md:text-right hero-rise" style={{ ['--d' as string]: '80ms' }}>{s.line}</p>
+        </div>
+        <div id="configure" className="wrap mt-8 scroll-mt-24">
+          <Experience name={s.name} pid={s.pid} poster={s.stills.hero} priority />
+          <div className="mt-4 flex flex-col justify-between gap-3 text-[0.75rem] uppercase tracking-[0.16em] text-muted md:flex-row">
+            <p>Drag to turn · tap a dot to open it · Customize for finish, glass and size</p>
+            {url ? <a href={url} target="_blank" rel="noopener" className="link-line font-medium text-foreground">Full screen, or in your room (AR)</a> : null}
           </div>
         </div>
       </section>
@@ -58,25 +60,16 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
             {s.paragraphs.map((p, i) => (<p key={i} className={i === 0 ? 't-lead reveal' : 't-body reveal'}>{p}</p>))}
             <p className="flex items-center gap-4 pt-4 text-[0.78rem] uppercase tracking-[0.18em] text-muted reveal"><span className="h-px w-8 bg-bronce" />{s.motion}</p>
           </div>
-          <dl className="md:col-span-5 md:col-start-8 reveal">
-            {(s.specs ?? []).slice(0, 4).map((sp) => (
-              <div key={sp.label} className="spec-row"><dt>{sp.label}</dt><dd>{sp.value}</dd></div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      {/* Open it */}
-      <section id="configure" className="pb-[var(--section)]">
-        <div className="wrap">
-          <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="eyebrow">Configure · open</p>
-              <h2 className="t-h2 mt-5 max-w-[22ch]">Choose the finish, the glass and the size. Then open it.</h2>
+          <div className="md:col-span-5 md:col-start-8">
+            <dl className="reveal">
+              {(s.specs ?? []).slice(0, 4).map((sp) => (
+                <div key={sp.label} className="spec-row"><dt>{sp.label}</dt><dd>{sp.value}</dd></div>
+              ))}
+            </dl>
+            <div className="figure mt-10 aspect-[4/5] reveal">
+              <Image src={s.stills.front} alt={`${s.name}, elevation`} fill sizes="(min-width: 768px) 36vw, 100vw" className="object-cover" />
             </div>
-            {url ? <a href={url} target="_blank" rel="noopener" className="link-line text-[0.78rem] font-medium uppercase tracking-[0.16em]">Full screen, or in your room (AR)</a> : null}
           </div>
-          <Experience name={s.name} pid={s.pid} poster={s.stills.hero} />
         </div>
       </section>
 

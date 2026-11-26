@@ -41,7 +41,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap items-center gap-6 md:col-span-6 md:justify-end hero-fade" style={{ ['--d' as string]: '500ms' }}>
               <Link href="/collection" className="btn btn-primary">See the collection <span className="arrow" aria-hidden="true" /></Link>
-              <Link href={`/systems/${lead.slug}`} className="link-line text-[0.8rem] font-medium uppercase tracking-[0.16em]">Open {lead.name} in 3D</Link>
+              <Link href={`/systems/${lead.slug}#configure`} className="link-line text-[0.8rem] font-medium uppercase tracking-[0.16em]">Open {lead.name} in 3D</Link>
             </div>
           </div>
         </div>
